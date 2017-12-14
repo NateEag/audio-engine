@@ -131,3 +131,29 @@ much working.
 
 For the moment, that's way more planning than I need for a project I have no
 time to work on.
+
+If I actually managed to get it this far, I might actually consider trying to
+apply my business plan.
+
+
+## How To Finance It
+
+I can't build this for free, really. No way I'll ever have enough time, even if
+I retire at 55 and live into my 90s.
+
+A business model could be to build a killer performance instrument *around* the
+core audio engine, not unlike the G2 (so freaking playable).
+
+The mistake that killed the G2, IMO, was not having patches stock on the
+shipping instrument that blew peoples' minds. The stuff that came in later
+years many regular keyboard players would have died to have, if only they'd
+known it could be done.
+
+By the same token, regular keyboard players will pay through the nose for an
+instrument with killer patches. The fact that the software is OSS doesn't
+matter - they want to buy a working instrument that plays beautifully, not
+spend hours sourcing and assembling their own hardware.
+
+So, unlike many OSS projects, I think this one could actually be a viable
+business, supported by hardware sales - *if* you could build a really amazing
+instrument(s?), which is a *gigantic* if.
