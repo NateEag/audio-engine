@@ -29,6 +29,19 @@ I might be able to get it.
 now.
 
 
+## How Not To Build It
+
+It's very possible something out there already meets my perceived needs and I
+just don't know about it.
+
+I've done a fair amount of searching, but the smart thing would be to refine my
+requirements into a semi-clear articulation, then ask for it in the relevant
+communities online - electro-music.com, any StackExchange audio site, and maybe
+a subreddit or three.
+
+If what I want is out there, someone there can tell me about it.
+
+
 ## How To Build It
 
 I have not found anything that meets all these requirements. If it doesn't
