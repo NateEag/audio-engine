@@ -1,0 +1,120 @@
+# Audio Engine
+
+I know pretty well what I want from a live performance audio engine (largely due
+to years spent with the magnificent [Nord G2X](http://www.nordkeyboards.com/products/nord-modular-g2)).
+
+I don't know exactly how to get it.
+
+In this repository, I hope to articulate exactly what I want and figure out how
+I might be able to get it.
+
+
+## Requirements
+
+- Digital (with deep magic analog can be simulated pretty well but analog can
+  never be made as reliable and reproduceable as digital)
+- Hard real-time (guarantee that loaded patches will run without glitching)
+- Scale number/complexity of simultaneous patches based on current hardware
+- CPU architecture agnostic (DSP chips are cool but tie you to hardware that
+  stops getting produced)
+- Open source (so the instruments I design could in theory be played in distant
+  future)
+- MIDI support
+- OSC support
+- Support for defining new controller interfaces (if MIDI/OSC aren't enough)
+- Support for arbitrary # of audio inputs/outputs
+- First-class support for defining new DSP audio processing primitives
+
+...I know there are more but that's a start, which is all I'm looking for right
+now.
+
+
+## How To Build It
+
+I have not found anything that meets all these requirements. If it doesn't
+exist and I can't get more talented folks to build it for me, how could I build
+it?
+
+
+### Write Raw DSP Patches By Hand
+
+I have an okay-ish grasp of how DSP works.
+
+Writing a few basic components from scratch and getting them to generate audio
+in concert would be a great way to find out just how much I don't.
+
+With the knowledge gained from that experiment, I'd be much better suited to
+start working on the building blocks I need.
+
+Note that these need not be interactive - just render an audio file using
+nothing but my own code to generate samples.
+
+Something like:
+
+- sine wave generator
+- saw wave generator
+- low-pass filter
+- LFO
+- program combining them into something vaguely resembling 'music'
+
+
+### Write Interactive DSP Patch By Hand
+
+Easy to explain, if not for me to do - repurpose my test hunks of code into
+things that work interactively on a desktop computer with MIDI reasonably well.
+
+Again, this means teaching it about MIDI entirely myself. That's painful wheel
+reinvention, to force me to really understand the building blocks myself.
+
+I'm sure it would be a horribly painful experience, and that I'd learn a ton
+from it.
+
+Bonus Points: find a cheap OSC controller and teach it to speak OSC, too.
+
+
+### Find Real-Time OS That Meets My Requirements
+
+Somewhere out there, a real-time OS that has decent primitives for abstracting
+the hardware and handling audio *has* to exist.
+
+...right?
+
+If not, roll up my sleeves and learn enough fundamentals to add whatever's
+missing to the best candidate.
+
+
+### Port Interactive DSP Patch To Chosen OS
+
+Again, this should teach me all sorts of horrible lessons I don't yet know I
+don't know.
+
+
+### Port Three Of My G2 Patches To Chosen OS
+
+This, again, would be horribly painful.
+
+But, once I've done it, even if they sound nothing like the original and barely
+work at all, I will have a bunch of shoddy code that taught me painful lessons
+I can then apply for the next step:
+
+
+### Hack Out POC For Building Interactive Patches On Chosen OS
+
+This is the "miracle occurs" step.
+
+at the moment I think the essence of this is:
+
+- DSP primitive units know nothing about hardware
+- Defining new DSP primitives is semi-feasible
+- MIDI (and OSC?) are handled for you
+- Layering, splitting, and inter-patch communication all work
+- Engine can tell you how much load this machine can handle
+
+
+### ???
+
+There are ten billion things I'd want to layer on top of this if I got that
+much working.
+
+For the moment, that's way more planning than I need for a project I have no
+time to work on.
