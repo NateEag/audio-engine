@@ -54,7 +54,7 @@ it?
 I have an okay-ish grasp of how DSP works.
 
 Writing a few basic components from scratch and getting them to generate audio
-in concert would be a great way to find out just how much I don't.
+in concert would be a great way to find out just how much I don't understand.
 
 With the knowledge gained from that experiment, I'd be much better suited to
 start working on the building blocks I need.
@@ -66,9 +66,12 @@ Something like:
 
 - sine wave generator
 - saw wave generator
-- low-pass filter
-- LFO
+- low-pass filter (tested on the saw wave, presumably)
+- LFO (test by modulating oscillator pitches and/or filter cutoff)
 - program combining them into something vaguely resembling 'music'
+
+Looks like Python has a built-in module for working with .wav files ('wave',
+predictably enough), so that could be a place to start.
 
 
 ### Write Interactive DSP Patch By Hand
