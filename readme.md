@@ -62,6 +62,11 @@ start working on the building blocks I need.
 Note that these need not be interactive - just render an audio file using
 nothing but my own code to generate samples.
 
+...as my first few Python experiments show, I'm not rewriting standard library
+tools, like Python's `wave` or `math` libraries - just that I write the actual
+sample generation myself. I think that's how I'll come to understand the DSP
+theory behind various sound modules better.
+
 Something like:
 
 - sine wave generator
