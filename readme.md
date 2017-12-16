@@ -62,10 +62,10 @@ start working on the building blocks I need.
 Note that these need not be interactive - just render an audio file using
 nothing but my own code to generate samples.
 
-...as my first few Python experiments show, I'm not rewriting standard library
-tools, like Python's `wave` or `math` libraries - just that I write the actual
-sample generation myself. I think that's how I'll come to understand the DSP
-theory behind various sound modules better.
+...as my first few Python experiments show, I'm not requiring that I rewrite
+standard library tools, like Python's `wave` or `math` libraries - just that I
+write the actual sample generation myself. I think that's how I'll come to
+understand the DSP theory behind various sound modules better.
 
 Something like:
 
@@ -74,9 +74,6 @@ Something like:
 - low-pass filter (tested on the saw wave, presumably)
 - LFO (test by modulating oscillator pitches and/or filter cutoff)
 - program combining them into something vaguely resembling 'music'
-
-Looks like Python has a built-in module for working with .wav files ('wave',
-predictably enough), so that could be a place to start.
 
 
 ### Write Interactive DSP Patch By Hand
