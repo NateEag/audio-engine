@@ -162,3 +162,38 @@ spend hours sourcing and assembling their own hardware.
 So, unlike many OSS projects, I think this one could actually be a viable
 business, supported by hardware sales - *if* you could build a really amazing
 instrument(s?), which is a *gigantic* if.
+
+
+## Prior Art / Useful References
+
+There are an unbelievable number of open source synthesizers in the world.
+
+I have not been able to find any that are hard-real-time and hardware-agnostic
+(perhaps for very good reasons I am as yet too naive to understand).
+
+Regardless, reading their code could be very educational, and some of it could
+probably be adapted for use with anything I might wind up writing.
+
+Without further ado, a list:
+
+* [Wren](http://bluehell.electro-music.com/wren/) is a software modular by one
+  of the G2 gods of electro-music.com. Looks a lot like the old G2 editor (not
+  by accident, I imagine).
+
+* [ChucK](http://chuck.cs.princeton.edu/) is a programming language for
+  real-time DSP music work, and very interesting. It's aimed at Mac OS,
+  Windows, and Linux, though. Porting it to a real-time OS and implementing an
+  algorithm to verify loaded patch computability could be a herculean effort (I
+  have no understanding of the language's underpinnings), but that might
+  *still* be a smarter route than trying to build my own. A quick glance at the
+  code suggests it's written in C++, which I shy away from.
+
+* [SuperCollider](http://supercollider.github.io/) is another audio programming
+  language. It, too, is aimed at desktop general-purpose OSes, so again a port
+  to behave like I want it to could be a massive undertaking.
+
+* [CSound](http://csound.com/) is a venerable old sound programming language. I
+  know less about it than the other two, but I believe it's aimed more at
+  composition historically rather than interactive instrument design.
+  Nonetheless, I believe it still can be used for the latter, and is
+  undoubtedly something it would be worth understanding.
