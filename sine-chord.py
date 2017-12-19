@@ -48,24 +48,18 @@ def main():
 
     frequencies = [int(freq) for freq in sys.argv[4:]]
 
-    amplitude = float(sys.argv[3])
-    amplitude = math.ceil(float(amplitude) * MAX_SAMPLE_VALUE)
+    # Figure out how loud each individual sine should be for them all to sum to
+    # at most the specified fraction of full level.
+    total_amplitude = float(sys.argv[3])
+    num_sines = len(frequencies)
+    sine_amplitude = math.ceil(total_amplitude * (MAX_SAMPLE_VALUE / num_sines))
 
     for i in range(0, num_seconds * 44100):
         time_in_secs = i / 44100.0
 
         value = 0
         for frequency in frequencies:
-            value += sine_sample(frequency, time_in_secs)
-
-        # FIXME This does not account for multiple sines adding up to be > 1.
-        #
-        # In a real system you'd have a mixer module proper - here I'd just
-        # split my max sample value across all the pitches, I guess?
-        #
-        # As long as you keep the number of notes and amplitude value low this
-        # works fine, of course... :P
-        value = amplitude * value
+            value += sine_amplitude * sine_sample(frequency, time_in_secs)
 
         packed_value = struct.pack('h', int(value))
 
