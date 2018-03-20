@@ -197,3 +197,13 @@ Without further ado, a list:
   composition historically rather than interactive instrument design.
   Nonetheless, I believe it still can be used for the latter, and is
   undoubtedly something it would be worth understanding.
+
+
+## Useful Books
+
+I have a few audio DSP books that have helped me learn the basics.
+
+I recently stumbled across this MIT-published volume and thought it seemed
+relevant:
+
+https://mitpress.mit.edu/books/audio-programming-book
