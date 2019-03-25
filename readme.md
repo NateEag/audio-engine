@@ -176,6 +176,21 @@ probably be adapted for use with anything I might wind up writing.
 
 Without further ado, a list:
 
+
+* [SuperCollider](http://supercollider.github.io/) is another audio programming
+  language. It, too, is aimed at desktop general-purpose OSes, so again a port
+  to behave like I want it to could be a massive undertaking. However, someone
+  did write
+  [Supernova](http://tim.klingt.org/publications/tim_blechmann_supernova.pdf),
+  which is a version of SuperCollider that supports parallelism, so it may not
+  be as hard as I think (and that paper has tons of useful insight into the
+  problem of writing real-time audio applications without depending on
+  a specific CPU architecture).
+
+* [nova.simd](http://tim.klingt.org/publications/tim_blechmann_novasimd.pdf)
+  might be a useful study in how to use SIMD to parallelize some audio
+  computations.
+
 * [Wren](http://bluehell.electro-music.com/wren/) is a software modular by one
   of the G2 gods of electro-music.com. Looks a lot like the old G2 editor (not
   by accident, I imagine).
@@ -188,15 +203,11 @@ Without further ado, a list:
   *still* be a smarter route than trying to build my own. A quick glance at the
   code suggests it's written in C++, which I shy away from.
 
-* [SuperCollider](http://supercollider.github.io/) is another audio programming
-  language. It, too, is aimed at desktop general-purpose OSes, so again a port
-  to behave like I want it to could be a massive undertaking.
-
 * [CSound](http://csound.com/) is a venerable old sound programming language. I
   know less about it than the other two, but I believe it's aimed more at
   composition historically rather than interactive instrument design.
-  Nonetheless, I believe it still can be used for the latter, and is
-  undoubtedly something it would be worth understanding.
+  Nonetheless, I believe it still can be used for the latter, and is something
+  that would be worth understanding.
 
 
 ## Useful Books
