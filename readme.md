@@ -100,6 +100,15 @@ the hardware and handling audio *has* to exist.
 If not, roll up my sleeves and learn enough fundamentals to add whatever's
 missing to the best candidate.
 
+[Genode](https://genode.org/about/index) sounds interesting, though it's not
+clear to me that it's a hard-real-time OS (the comments in the HN article where
+I found it made it sound like it was).
+
+[TessellationOS](https://tessellation.cs.berkeley.edu/) is a research project
+that's precisely about real-time media and apportioning hard resources to meet
+QoS guarantees; there are some papers about applying it to audio synthesis.
+It's not clear to me this is or ever will be OSS, though.
+
 
 ### Port Interactive DSP Patch To Chosen OS
 
