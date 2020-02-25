@@ -218,6 +218,14 @@ Without further ado, a list:
   Nonetheless, I believe it still can be used for the latter, and is something
   that would be worth understanding.
 
+* Here is [a collection of open source Eurorack hardware
+  modules](https://github.com/pichenettes/eurorack). If nothing else they could
+  provide a basis for software variations on the modules. Apparently they've
+  been ported to [VCV Rack](https://vcvrack.com/)?
+
+* [VCV Rack](https://github.com/VCVRack) is a virtualized Eurorack DAW. Pretty
+  cool, and yet again OSS.
+
 
 ## Useful Books
 
