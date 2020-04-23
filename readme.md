@@ -109,6 +109,22 @@ that's precisely about real-time media and apportioning hard resources to meet
 QoS guarantees; there are some papers about applying it to audio synthesis.
 It's not clear to me this is or ever will be OSS, though.
 
+This [Hacker News thread](https://news.ycombinator.com/item?id=22952259)
+touches on the subject of how to run an RTOS on high-speed multi-core CPUs.
+Note specifically the claims from namibj on how to get an RTOS that runs open
+source software on high-speed multicore CPUs:
+
+> You should be able to use seL4 as a hypervisor and stuff a GNU/Linux system
+> inside. The actual low-latency work would be done via native seL4 processes.
+> It's proven to have hard latency bounds, thus being suitable for
+> hard-realtime applications (except for modern x86_64 CPUs having special
+> interrupts that can't be disabled, and thus possess the capability to
+> introduce latency spikes of potentially unbounded duration). The HFT
+> community found ways around those issues, however. It wouldn't be good enough
+> to control a manned aircraft, but for entertainment-related audio, it should
+> easily be good enough (those spikes are around a millisecond or so, iirc).
+
+
 
 ### Port Interactive DSP Patch To Chosen OS
 
