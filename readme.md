@@ -239,6 +239,10 @@ Without further ado, a list:
   provide a basis for software variations on the modules. Apparently they've
   been ported to [VCV Rack](https://vcvrack.com/)?
 
+* Here are [some open-source VST / AU
+  plugins](http://mda.smartelectronix.com/). I believe some of them may even
+  work in Audacity.
+
 * [VCV Rack](https://github.com/VCVRack) is a virtualized Eurorack DAW. Pretty
   cool, and yet again OSS.
 
