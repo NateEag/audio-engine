@@ -14,7 +14,7 @@ I might be able to get it.
 - Digital (with deep magic analog can be simulated pretty well but analog can
   never be made as reliable and reproduceable as digital)
 - Hard real-time (guarantee that loaded patches will run without glitching)
-- Scale number/complexity of simultaneous patches based on current hardware
+- Autoscale number/complexity of simultaneous patches based on current hardware
 - CPU architecture agnostic (DSP chips are cool but tie you to hardware that
   stops getting produced)
 - Open source (so the instruments I design could in theory be played in distant
@@ -108,6 +108,10 @@ I found it made it sound like it was).
 that's precisely about real-time media and apportioning hard resources to meet
 QoS guarantees; there are some papers about applying it to audio synthesis.
 It's not clear to me this is or ever will be OSS, though.
+
+[ElkOS](https://elk.audio/audio-os/) is a Linux-based audio OS whose website
+claims it is for "real time audio performances" in its copy. No idea if that's
+meant to be a claim of a hard real-time kernel.
 
 This [Hacker News thread](https://news.ycombinator.com/item?id=22952259)
 touches on the subject of how to run an RTOS on high-speed multi-core CPUs.
