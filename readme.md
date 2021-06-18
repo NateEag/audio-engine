@@ -251,7 +251,7 @@ Without further ado, a list:
   cool, and yet again OSS.
 
 
-## Useful Books
+## Useful Educational Resources
 
 I have a few audio DSP books that have helped me learn the basics.
 
@@ -259,3 +259,7 @@ I recently stumbled across this MIT-published volume and thought it seemed
 relevant:
 
 https://mitpress.mit.edu/books/audio-programming-book
+
+This Hacker News discussion of how to learn audio programming is interesting:
+
+https://news.ycombinator.com/item?id=27273706
