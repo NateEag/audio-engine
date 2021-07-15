@@ -128,6 +128,9 @@ source software on high-speed multicore CPUs:
 > to control a manned aircraft, but for entertainment-related audio, it should
 > easily be good enough (those spikes are around a millisecond or so, iirc).
 
+The [Bela products](https://bela.io/products/) runs a Linux kernel that they
+claim is incredibly low-latency, like down to two-sample buffers low-latency.
+That code should be OSS.
 
 
 ### Port Interactive DSP Patch To Chosen OS
@@ -249,6 +252,18 @@ Without further ado, a list:
 
 * [VCV Rack](https://github.com/VCVRack) is a virtualized Eurorack DAW. Pretty
   cool, and yet again OSS.
+
+
+## Open Source G2 Tools
+
+[pch2csd](https://github.com/gleb812/pch2csd) is a tool for converting G2
+patches into Csound patches. Could be useful for resurrecting my patches come
+the inevitable day my G2 dies.
+
+[nord_g2_editor](https://github.com/BVerhue/nord_g2_editor) is an open-source
+G2 editor. Alas, it's written in Pascal/Delphi, so the whole stack isn't open,
+rendering it not long-term sustainable (and indeed, there is no 64-bit build
+available for OS X, last I checked).
 
 
 ## Useful Educational Resources
