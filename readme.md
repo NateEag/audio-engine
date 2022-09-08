@@ -132,6 +132,13 @@ The [Bela products](https://bela.io/products/) runs a Linux kernel that they
 claim is incredibly low-latency, like down to two-sample buffers low-latency.
 That code should be OSS.
 
+Note that if a patched or modified Linux kernel proves to be good enough for
+the job, the [Nix package manager](https://nixos.org/) might be a great piece
+of plumbing for ensuring reproducible builds. Someone has done some work in
+this direction with the [musnix](https://github.com/musnix/musnix) project,
+which makes the RT_PREEMPT patches available in a Nix-based system (among other
+things).
+
 
 ### Port Interactive DSP Patch To Chosen OS
 
